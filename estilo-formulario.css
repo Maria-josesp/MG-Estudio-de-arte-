@@ -1,0 +1,181 @@
+/* =========================
+   · Formulario Contacto
+   ========================= */
+:root{
+  --paper:#000000; --panel:#0c1b33; --ink:#ffffff; 
+  --gap:16px; --radius:16px; --t:.25s cubic-bezier(.2,.8,.2,1)
+}
+
+
+/* Banner Formulario*/
+
+.banner {
+    border: 0%;
+    margin: 0%;
+    padding:0% ; 
+    display: flex;
+    justify-content:center ; 
+    align-items: center ; 
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;  
+}
+
+.logo {
+    margin-right: 80px;
+    width: auto ;
+    height:110px ;
+}
+
+.menu a {
+   
+    display: inline-block;
+    text-decoration:none;
+    padding: 20px 30px;
+    font-size:18px;
+    color: white;
+    letter-spacing: 3px;
+    font-family:'Karla';
+}
+
+.menu a:hover {
+    color: rgb(138, 14, 107);
+    transform: scale(1.1);
+    transition: all 0.1s ease ;
+}  
+
+.menu ul {
+    list-style:none;/
+    padding: 0;
+    display:flex;
+    gap: 15px; 
+    justify-content:center;
+} 
+
+
+/* BASE */
+
+*{ box-sizing:border-box }
+html,body{ height:100% }
+
+body{
+  margin:0; 
+  color:var(--paper);
+  background: var(--ink);
+  font-family: 'Karla';
+  line-height:1.55;
+}
+
+
+/*FORMULARIO*/
+
+.formulario { 
+  display: flex;  
+  justify-content: center;
+  margin-top:14px;
+  border:1px solid rgba(255,255,255,.55);
+  border-radius: var(--radius);
+  padding:18px; 
+}
+
+.datos{
+  border-radius: var(--radius);
+}
+
+.encabezado {
+  margin-top: 0;
+  width: 100%;
+  height: 320px;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("img/pinceles3.jpg");
+  background-size: cover;
+}
+
+.encabezado-formulario {
+  padding:18px;
+  text-align: center;
+  width: 580px;
+  margin: 110px auto 0 auto;
+}
+
+.encabezado-formulario h1  { 
+    color: white;
+    font-family: 'Karla';
+    font-size: 30px;
+    margin:20px 0 .25rem; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);   
+ }
+
+.encabezado-formulario h2  { 
+    color: white;
+    font-family: 'Karla';
+    font-size: 20px;
+    margin:20px 0 .25rem; 
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);  
+ }
+
+
+/* Tarjeta formulario */
+
+.field{
+  display: grid;
+  gap: 6px ;
+  border:1px solid rgba(255,255,255,.55);
+  border-radius:12px; 
+  padding:12px; 
+  margin:0 0 12px;
+  width: 600px;
+}
+
+.field input, .field textarea, .field select {
+  border:1px solid rgba(36, 55, 65, 0.25);
+  border-radius:10px; 
+  padding:10px 12px; 
+  outline:none;
+}
+
+.field input:focus, .field textarea:focus .field select:focus{
+  border-color: #870b7a;  
+}
+
+.option {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* BOTON DE ENVIAR FORMULARIO */
+
+.boton-enviar { display:flex; justify-content:center; margin-top:5px; border: none;}
+
+.btn{
+    background: rgba(0, 0, 0, 0.766);
+    border:none;
+    border-radius: 4px;
+    color: white;
+    margin-top: 20px;
+    font-family: 'Karla';
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 10px 20px;
+}
+
+.btn:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.426);  
+}
+
+
+/* Footer */
+.site-footer{
+  width:100% ; margin:20px auto 24px; height: 90px;
+  justify-content: center;
+  align-content: center;
+  color:#ffffff; text-align:center; text-shadow: 0 1px 4px rgba(0,0,0,.35);
+  background-color: black;
+ }

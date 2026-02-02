@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encarga un proyecto a medida</title>
+    <link rel =" preconnect" href=" https: //fonts.googleapis.com">
+    <link rel =" preconnect" href=" https: //fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo-formulario.css">
+</head>
+
+<body>
+    <!-- CABECERA -->
+
+    <header class="banner">
+        <img src="img/LOGOMG.JPG" class="logo">    
+
+     <!-- MENU -->
+      <nav class="menu">
+        <ul>
+           <li><a href="index.html">GALERIA DE ARTE</a></li>
+           <li><a href="pintura.html">PINTURAS</a></li>
+           <li><a href="fotografia.html">FOTOGRAFÍA</a></li>
+           <li><a href="obraspersonalizadas.html">OBRAS PERSONALIZADAS</a></li>
+           <li><a href="formulario.html">CONTACTO</a></li>
+        </ul>
+      </nav>
+    </header> 
+
+    <header class="encabezado">
+      <div class="encabezado-formulario">
+        <h1>¿Quieres encargar un proyecto con nosotros? Contáctanos abajo</h1>
+        <h2> Además de nuestro catálago de diseños y piezas disponibles, trabajamos por encargo. Puedes seleccionar el servicio que te interese y describir
+             los detalles. Nuestro equipo se pondrá en contacto de inmediado</h2>
+        </div>     
+    </header>
+
+    <main class="formulario">
+        <form action="mailto:mariajosesalaspino@gmail.com" method="post" enctype="text/plain" novalidate >
+          <fieldset class="datos"> 
+                <div class="field">
+                    <label for="text">Nombre</label>
+                     <input type="text" id="text" name="Nombre" placeholder="Nombre y apellidos" required />
+                </div>
+
+                <div class="field"> 
+                 <label for="email"> Correo electrónico</label> 
+                 <input type="email" id="email" name="email" placeholder="tucorreo@dominio.com" autocomplete="email" required /> 
+                </div> 
+
+                <div class="field">  
+                  <label for="select">¿En qué servicio estás interesado? </label> <!-- Etiqueta del select -->
+                      <select id="select" name="Servicio" required> <!-- Select principal -->
+                          <option value="" >— Seleccione una opción —</option> 
+                            <option>Pintura</option> 
+                            <option>Fotografía</option> 
+                            <option>Obras Personalizadas</option>
+                      </select>
+                </div>
+
+                <div class="field"> 
+                   <label for="select">¿Cómo se enteró de nosotros? </label> 
+                   <select id="select" name="¿Como se entero de nosotros?" required> 
+                      <option value="">— Seleccione una opción —</option> 
+                      <option>Google/ Motor de busqueda de internet</option> 
+                      <option>Redes Sociales</option> 
+                      <option>Cliente anterior</option>
+                      <option>Otro</option>
+                   </select>  
+                </div>
+
+                <div class="field"> 
+                   <label class="option"><input type="radio" name="gender" value="mujer" /> ¿Quieres suscribirte a nuestra lista de correo?</label> 
+                </div> 
+
+                <div class="field">
+                   <label for="textarea"> Describe tu idea o indica la obra de interés</label> 
+                   <textarea id="textarea" name="Detalles del proyecto" rows="4" placeholder="Escribe aquí…"></textarea>
+                </div> 
+          </fieldset>          
+
+          <fieldset class="boton-enviar"> 
+               <button type="submit" class="btn">Enviar</button> 
+          </fieldset> 
+
+        </form>
+   </main>
+
+   <footer class="site-footer"> <!-- Pie -->
+    © 2025 Estudio de Arte MG · Contacto <!-- Nota -->
+  </footer> <!-- Fin pie -->
+</body>
+</html>

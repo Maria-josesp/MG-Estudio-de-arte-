@@ -1,0 +1,170 @@
+/* =========================
+   ·  Pintura
+   ========================= */
+:root{
+  --paper:#000000; --panel:#0c1b33; --ink:#ffffff; 
+  --gap:16px; --radius:16px; --t:.25s cubic-bezier(.2,.8,.2,1)
+}
+
+
+/* Banner Formulario*/
+
+.banner {
+    border: 0%;
+    margin: 0%;
+    padding:0% ; 
+    display: flex;
+    justify-content:center ; 
+    align-items: center ; 
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    z-index: 100;  
+}
+
+.logo {
+    margin-right: 80px;
+    width: auto ;
+    height:110px ;
+}
+
+.menu a {
+   
+    display: inline-block;
+    text-decoration:none;
+    padding: 20px 30px;
+    font-size:18px;
+    color: white;
+    letter-spacing: 3px;
+    font-family:'Karla';
+}
+
+.menu a:hover {
+    color: rgb(138, 14, 107);
+    transform: scale(1.1);
+    transition: all 0.1s ease ;
+}  
+
+.menu ul {
+    list-style:none;/
+    padding: 0;
+    display:flex;
+    gap: 15px; 
+    justify-content:center;
+} 
+
+
+/* BASE */
+
+*{ box-sizing:border-box }
+html,body{ height:100% }
+
+body{
+  margin:0; 
+  color:var(--paper);
+  background: var(--ink);
+  font-family: 'Karla';
+  line-height:1.55;
+}
+
+
+/*SECCION ENCABEZADO*/
+
+
+.encabezado {
+  margin-top: 0;
+  width: 100%;
+  height: 250px;
+
+}
+
+.encabezado-obras {
+  padding:18px;
+  text-align: center;
+  width: 580px;
+  margin: 110px auto 0 auto;
+}
+
+.encabezado-obras h1  { 
+    color: rgb(0, 0, 0);
+    font-family: 'Karla';
+    font-size: 30px;
+    margin:20px 0 .25rem; 
+    letter-spacing: 15px;
+      
+ }
+
+.encabezado-obras h2  { 
+    color: rgb(48, 47, 47);
+    font-family: 'Karla';
+    font-size: 18px;
+    margin:20px 0 .25rem; 
+     
+ }
+
+.galeria-obras {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 60px;
+
+}
+
+.art-item {
+   text-align: center;
+ }
+
+.art-item a {
+   text-decoration: none;
+   color: #111;
+}
+
+.art-item img {
+   width: 100%;
+   height: 500px;
+   object-fit: cover;
+   border-radius: 4px;
+   transition: transform 0.3s ease;
+}
+
+.contacto {
+  margin-top: 0;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(104, 36, 104, 0.89);
+ 
+}
+
+.contacto-obraspersonalizadas {
+  padding:18px;
+  text-align: center;
+  width: 650px;
+  margin: 110px auto 0 auto;
+}
+
+.contacto-obraspersonalizadas h1  { 
+    color: black;
+    font-family: 'Karla';
+    font-size: 28px;
+    margin:20px 0 .25rem;   
+ }
+
+ .clic-aqui{
+  font-family: 'Karla';
+  font-size: 24px;
+  text-decoration: none;
+  color: rgb(168, 167, 167);
+} 
+
+ .site-footer{
+  width:100% ; margin:0 auto 24px; height: 90px;
+  justify-content: center;
+  align-content: center;
+  color:#ffffff; text-align:center; text-shadow: 0 1px 4px rgba(0,0,0,.35);
+  background-color: black;
+ }
+
+
