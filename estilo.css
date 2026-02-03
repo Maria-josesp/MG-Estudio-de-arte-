@@ -577,9 +577,19 @@ body {
         
 @media (max-width: 768px) {
 .logo { 
-    max-width: 150px;
+    max-width: 100px;
     height:auto;
      }
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #000;
+    width: 100%;
+    box-sizing:border-box;
+    }
+    
 .hamburger-btn {
         display: flex; /* Aparece en móviles */
     }
@@ -590,9 +600,10 @@ body {
         top: 60px; /* Ajusta según el alto de tu header */
         left: 0;
         width: 100%;
-        background-color: #fff;
+        background-color: #000;
         flex-direction: column;
         text-align: center;
+        z-index:1000;
     }
 
 .menu.active {
