@@ -1,4 +1,5 @@
- console.log("5"-1);
+ document.addEventListener('DOMContentLoaded', () => {
+  
         const slides = document.querySelector('.carrusel');
         const images = document.querySelectorAll('.carrusel-item');
         const prev = document.querySelector('.prev');
@@ -26,6 +27,6 @@
     menuToggle.addEventListener('click', () => {
         navMenu.classList.toggle('active');
     });       
-        
+  });              
         
        
