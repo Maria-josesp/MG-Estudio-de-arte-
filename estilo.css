@@ -597,6 +597,8 @@ body {
     
 .hamburger-btn {
         display: flex; /* Aparece en móviles */
+        z-index: 1000;
+        flex-direction: column;
     }
 
 .menu {
