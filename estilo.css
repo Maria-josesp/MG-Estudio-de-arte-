@@ -563,6 +563,7 @@ body {
 }
 
 /* RESPONSIVE */
+
    @media (max-width: 1024px) {
 
 .sidebar {
@@ -575,7 +576,37 @@ body {
   }
         
 @media (max-width: 768px) {
- .sidebar {
+
+.hamburger-btn {
+        display: flex; /* Aparece en móviles */
+    }
+
+.menu {
+        display: none; /* Escondemos el menú por defecto */
+        position: absolute;
+        top: 60px; /* Ajusta según el alto de tu header */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        flex-direction: column;
+        text-align: center;
+    }
+
+.menu.active {
+        display: block; /* Se muestra cuando activamos 'active' con JS */
+    }
+
+.menu ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+.menu ul li {
+        padding: 15px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+.sidebar {
   display: none;
 }
             
@@ -601,3 +632,22 @@ body {
  }
 }
 
+.hamburger-btn {
+    display: none; /* Se oculta en computadoras */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+
+.hamburger-btn .line {
+    width: 30px;
+    height: 3px;
+    background-color: #333; /* Cambia el color según tu diseño */
+    border-radius: 10px;
+}
