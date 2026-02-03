@@ -593,6 +593,23 @@ body {
         
 @media (max-width: 768px) {
 
+.logo{
+    width: 100px;s
+    height: auto;
+    margin-right: auto;
+    margin-left: 10px;
+}    
+
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 60px;
+
+}
+
 .hamburger-btn {
         display: flex; /* Aparece en móviles */
         z-index:1001;
