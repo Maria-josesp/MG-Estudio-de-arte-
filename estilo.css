@@ -58,7 +58,7 @@ body {
 }  
 
 .hamburger-btn {
-    display: flex; 
+    display: none; 
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
@@ -594,7 +594,7 @@ body {
 @media (max-width: 768px) {
 
 .hamburger-btn {
-        display: none; /* Aparece en móviles */
+        display: flex; /* Aparece en móviles */
     }
 
 .menu {
