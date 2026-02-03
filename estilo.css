@@ -17,7 +17,7 @@ body {
     align-items: center ; 
     background-color: black;
     position: fixed;
-    width: 100vw;
+    width: 100%;
     top: 0;
     z-index: 100;  
 }
@@ -594,10 +594,10 @@ body {
 @media (max-width: 768px) {
 
 .logo{
-    width: 100px;
+    width: 70px;
     height: auto;
     margin-right: auto;
-    margin-left: 10px;
+    margin-left: 0 ;
 }    
 
 
@@ -606,7 +606,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-    height: 70px;
+    height: 80px;
 
 }
 
