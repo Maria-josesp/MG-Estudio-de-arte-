@@ -595,15 +595,16 @@ body {
 
 .hamburger-btn {
         display: flex; /* Aparece en móviles */
+        z-index:1001;
     }
 
 .menu {
-        display: flex; /* Escondemos el menú por defecto */
+        display: none; /* Escondemos el menú por defecto */
         position: static;
         top: 60px; /* Ajusta según el alto de tu header */
         left: 0;
         width: 100%;
-        background-color: #fff;
+        background-color: #1a1a1a;
         flex-direction: column;
         text-align: center;
         z-index: 999;
@@ -621,6 +622,7 @@ body {
 .menu ul {
         display: flex;
         flex-direction: column;
+        gap: 20px;
         padding: 0;
     }
 
