@@ -594,7 +594,7 @@ body {
 @media (max-width: 768px) {
 
 .logo{
-    width: 80px;
+    width: 120px;
     height: auto;
     margin-right: auto;
     margin-left: 0 ;
@@ -606,7 +606,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    height: 100px;
+    height: 120px;
 
 }
 
