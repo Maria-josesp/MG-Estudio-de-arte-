@@ -576,7 +576,10 @@ body {
   }
         
 @media (max-width: 768px) {
-
+.logo { 
+    max-width: 150px;
+    height:auto;
+     }
 .hamburger-btn {
         display: flex; /* Aparece en móviles */
     }
