@@ -589,6 +589,11 @@ body {
     width: 100%;
     box-sizing:border-box;
     }
+.exposiciones-carrusel, .exposiciones-carrusel img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+     }
     
 .hamburger-btn {
         display: flex; /* Aparece en móviles */
