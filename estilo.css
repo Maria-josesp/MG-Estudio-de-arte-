@@ -28,6 +28,10 @@ body {
     height:110px ;
 }
 
+.menu.active {
+    display: flex;
+}
+
 .menu a {
     display: inline-block;
     text-decoration:none;
@@ -594,18 +598,19 @@ body {
     }
 
 .menu {
-        display: block; /* Escondemos el menú por defecto */
-        position: absolute;
+        display: flex; /* Escondemos el menú por defecto */
+        position: static;
         top: 60px; /* Ajusta según el alto de tu header */
         left: 0;
         width: 100%;
         background-color: #fff;
         flex-direction: column;
         text-align: center;
+        z-index: 999;
     }
 
 .menu.active {
-        display: block; /* Se muestra cuando activamos 'active' con JS */
+        display: flex; /* Se muestra cuando activamos 'active' con JS */
         position: absolute;
         top: 100%;
         left: 0;
@@ -620,7 +625,7 @@ body {
     }
 
 .menu ul li {
-        padding: 15px 0;
+        padding: 0;
         border-bottom: 1px solid #eee;
     }
 
@@ -642,6 +647,4 @@ body {
     font-size: 1.1rem;
  }
 }
-
-
 
