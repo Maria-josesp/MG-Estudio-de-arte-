@@ -616,7 +616,7 @@ body {
         display: flex; /* Aparece en móviles */
         width: 50px;
         height: auto;
-        z-index:1010;
+        z-index:1001;
     }
     
     
