@@ -17,7 +17,7 @@ body {
     align-items: center ; 
     background-color: black;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     top: 0;
     z-index: 100;  
 }
@@ -26,6 +26,31 @@ body {
     margin-right: 80px;
     width: auto ;
     height:110px ;
+}
+
+.hamburger-btn {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1000;
+}
+
+.hamburger-btn .line {
+    width: 30px;
+    height: 3px;
+    background-color: #ffffff; /* Cambia el color según tu diseño */
+    border-radius: 10px;
+
+}
+
+.menu {
+    display: flex;
 }
 
 .menu.active {
@@ -57,25 +82,7 @@ body {
     justify-content:center; 
 }  
 
-.hamburger-btn {
-    display: none; 
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 25px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    z-index: 10;
-}
 
-.hamburger-btn .line {
-    width: 30px;
-    height: 3px;
-    background-color: #ffffff; /* Cambia el color según tu diseño */
-    border-radius: 10px;
-}
 /* -----------------1.- SECCION CARRUSEL------------------*/
 
 .exposiciones-carrusel{
@@ -95,7 +102,7 @@ body {
 }
 
 .carrusel img {
-   width: 100%;                         
+   width: 100vw;                         
    height: 600px;                         
    z-index: 1;
    min-width: 100%;
@@ -117,7 +124,7 @@ body {
    content: ""; 
    top: 0;
    left: 0;
-   width: 100%;
+   width: 100vw;
    height: 600px;
    position: absolute;
    background-color: black;
@@ -382,7 +389,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 30px 0 30px 30px;
-    width: 100%;
+    width: 100vw;
     height: 450px;;
     margin: 0 auto;
     margin-top: 60px;
@@ -457,7 +464,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 250px;
-    width: 100%;
+    width: 100vw;
     align-items: center;
     text-align: center;
     margin-top: 50PX;
@@ -495,7 +502,7 @@ body {
 
  /* FOOTER */
 .site-footer {
-     width: 100%;
+     width: 100vw;
      background: black; color:white;
      margin-top: 30px;
      overflow: hidden;
@@ -583,6 +590,7 @@ body {
 .copyright {
    font-size: 0.9rem;
    color: rgba(255,255,255,0.7);
+   border-top: 1px solid rgba(255,255,255,0.1);
 }
 
 
@@ -592,41 +600,33 @@ body {
 
         
 @media (max-width: 768px) {
-
+  
 .logo{
-    width: 180px;
+    width: 100px;
     height: auto;
     margin-right: auto;
-    margin-left: 0 ;
+    margin-left: 10px;
 }    
-
 
 .banner{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
-    height: 120px;
-    box-sizing: border-box;
-    width: 100%;
+    padding: 0 20px;
+    height: 80px;
 
 }
-
 .hamburger-btn {
         display: flex; /* Aparece en móviles */
-        width: 50px;
-        height: auto;
-        z-index:1001;
     }
-    
-    
+
 .menu {
         display: none; /* Escondemos el menú por defecto */
-        position: static;
+        position: absolute;
         top: 60px; /* Ajusta según el alto de tu header */
         left: 0;
         width: 100%;
-        background-color: #1a1a1a;
+        background-color: #000000;
         flex-direction: column;
         text-align: center;
         z-index: 999;
@@ -634,41 +634,144 @@ body {
 
 .menu.active {
         display: flex; /* Se muestra cuando activamos 'active' con JS */
-        position: absolute;
+        /*position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background: black;
+        background: black;*/
     }
 
 .menu ul {
-        display: flex;
+        /*display: flex;*/
         flex-direction: column;
-        gap: 20px;
         padding: 0;
     }
 
 .menu ul li {
-        padding: 0;
+        /*padding: 0;*/
         border-bottom: 1px solid #eee;
     }
 
-            
-.footer-bottom {
+.exposiciones-carrusel{
+    height: 300px;
+    margin-top: 80px;
+
+}   
+.carrusel-item {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    padding:  10px;
+}  
+
+.carrusel-titulo{
+    font-size: 26px;
+
+}
+
+.seccion-origen {
+ padding: 20px;
+
+}
+
+.origen-mg{
+
+    flex-direction: row;
+    gap: 15px;
+}
+.titulo-origen{
+    flex: 1;
+}
+.texto-origen {
+    flex: 2;
+}
+
+.titulo-origen h1{  
+    font-size: 20px;
+
+}
+
+.texto-origen p{
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.tituloflexcontainer{
+    margin: 80px 0 5px 0;
+}
+
+.tituloflexcontainer h1 {
+    font-size: 25px;
+    
+}
+
+.flexcontainer div { 
+
+    border-radius: 0px;
+}
+
+.nuestrafilosofia h1 {
+    font-size: 25px;
+}
+
+.texto-secciones h2 {
+    font-size: 24px ;
+}
+
+.nuestros-artistas {
+    height: auto;
+    padding: 40px 20px;
+    margin-top: 30px;
+}
+
+.texto-artistas{
+    width: 100%;
+    padding: 0 15px;
+    
+}
+
+.texto-artistas h2{
+    font-size: 18px;
+}
+
+.footer-grid {
    flex-direction: column;
    text-align: center;
+   align-items: center;
+   gap: 25px;
+   padding: 30px 0;
+}
+
+.footer-grid h3{
+    font-size: 15px;
+    margin-bottom: 15px;
 }
             
-.footer-bottom-links {
-   justify-content: center;
+.footer-links, .footer-contacto {
+   align-items: center;
+}
+
+.footer-links a{
+    font-size: 15px;
+    padding: 5px 0;
 }
             
-.hero h1 {
-  font-size: 2.2rem;
+.boton-contacto {
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.copyright{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 18px;
 }
             
-.hero p {
-    font-size: 1.1rem;
- }
 }
+
+
 
